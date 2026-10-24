@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JMF Consultants Visa & Immigration Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            DEFAULT: '#0B192C',
+                            dark: '#060E18',
+                            light: '#1E3E62'
+                        },
+                        amberGold: {
+                            DEFAULT: '#D4AF37',
+                            light: '#E6C657',
+                            dark: '#AA8C2C'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for Professional Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased selection:bg-amberGold selection:text-navy-dark">
+
+    <!-- Top Announcement Bar -->
+    <div class="bg-navy-dark text-gray-300 text-xs sm:text-sm py-2.5 px-4 sm:px-12 border-b border-navy-light/30">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+            <div class="flex items-center gap-6">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-phone text-amberGold"></i> +92 333
+                    5678699</span>
+                <span class="flex items-center gap-2"><i class="fa-solid fa-envelope text-amberGold"></i>
+                    jmfconsultantpk.com</span>
+            </div>
+            <div class="flex items-center gap-4">
+                <span class="flex items-center gap-2"><i class="fa-solid fa-clock text-amberGold"></i> Mon - Fri: 9:00
+                    AM - 6:00 PM</span>
+                <div class="flex gap-3 text-amberGold">
+                    <a href="#" class="hover:text-white transition" aria-label="LinkedIn"><i
+                            class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#" class="hover:text-white transition" aria-label="Facebook"><i
+                            class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="hover:text-white transition" aria-label="Instagram"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-navy shadow-lg border-b border-amberGold/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 flex justify-between items-center h-20">
+            <!-- Logo -->
+            <a href="#" class="flex items-center gap-3 group">
+                <div
+                    class="w-11 h-11 rounded-xl bg-gradient-to-br from-amberGold to-amberGold-dark flex items-center justify-center text-navy-dark font-black text-2xl shadow-md group-hover:scale-105 transition">
+                    <i class="fa-solid fa-compass"></i>
+                </div>
+                <div>
+                    <span class="text-xl sm:text-2xl font-bold tracking-tight text-white">JMF<span
+                            class="text-amberGold">Consultants</span></span>
+                    <span class="block text-[10px] tracking-widest text-gray-400 uppercase">Visa & Immigration</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-7 font-medium text-sm text-gray-200">
+                <a href="#services" class="hover:text-amberGold transition">Services</a>
+                <a href="#countries" class="hover:text-amberGold transition">Countries</a>
+                <a href="#quiz" class="hover:text-amberGold transition">Eligibility Quiz</a>
+                <a href="#about" class="hover:text-amberGold transition">About Us</a>
+                <a href="#testimonials" class="hover:text-amberGold transition">Testimonials</a>
+                <a href="#contact" class="hover:text-amberGold transition">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center gap-4">
+                <button onclick="openModal('consultationModal')"
+                    class="bg-gradient-to-r from-amberGold to-amberGold-dark text-navy-dark font-bold px-6 py-2.5 rounded-xl shadow-md hover:brightness-110 transition transform active:scale-95 text-sm">
+                    Book Consultation
+                </button>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menuBtn" class="md:hidden text-white text-2xl focus:outline-none"
+                aria-label="Toggle Mobile Menu">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobileMenu"
+            class="hidden md:hidden bg-navy-dark border-t border-navy-light px-6 py-6 space-y-4 shadow-2xl">
+            <a href="#services" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">Services</a>
+            <a href="#countries" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">Countries</a>
+            <a href="#quiz" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">Eligibility Quiz</a>
+            <a href="#about" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">About Us</a>
+            <a href="#testimonials" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">Testimonials</a>
+            <a href="#contact" onclick="toggleMobileMenu()"
+                class="block text-gray-200 font-medium hover:text-amberGold transition">Contact</a>
+            <button onclick="toggleMobileMenu(); openModal('consultationModal')"
+                class="w-full bg-amberGold text-navy-dark font-bold py-3 rounded-xl text-center shadow">
+                Book Consultation
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section
+        class="relative bg-gradient-to-br from-navy via-navy-light to-navy-dark text-white py-20 lg:py-32 overflow-hidden">
+        <div
+            class="absolute inset-0 opacity-10 bg-[radial-gradient(#D4AF37_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+            <div class="space-y-6 text-center lg:text-left">
+                <div
+                    class="inline-flex items-center gap-2 bg-amberGold/10 border border-amberGold/30 text-amberGold px-4 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider">
+                    <i class="fa-solid fa-award"></i> Certified Legal Immigration Consultants
+                </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                    Your Pathway to <span
+                        class="text-transparent bg-clip-text bg-gradient-to-r from-amberGold to-amberGold-light">Global
+                        Opportunities</span>
+                </h1>
+                <p class="text-gray-300 text-base sm:text-lg max-w-xl mx-auto lg:mx-0 font-light leading-relaxed">
+                    Turn your dream of studying, working, or settling abroad into reality. We offer end-to-end visa
+                    filing with a proven 98% success rate across top global destinations.
+                </p>
+                <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-2">
+                    <a href="#quiz"
+                        class="bg-amberGold hover:bg-amberGold-light text-navy-dark font-bold px-8 py-4 rounded-xl shadow-xl transition transform hover:-translate-y-0.5 flex items-center justify-center gap-3">
+                        <i class="fa-solid fa-clipboard-question"></i> Free Assessment Quiz
+                    </a>
+                    <button onclick="openModal('consultationModal')"
+                        class="border-2 border-amberGold/50 hover:border-amberGold text-white font-semibold px-8 py-4 rounded-xl transition flex items-center justify-center gap-3 bg-white/5 hover:bg-white/10 backdrop-blur-sm">
+                        <i class="fa-solid fa-calendar-check"></i> Book Expert Call
+                    </button>
+                </div>
+
+                <!-- Quick Country Pills -->
+                <div
+                    class="pt-6 border-t border-navy-light/50 flex flex-wrap items-center justify-center lg:justify-start gap-3">
+                    <span class="text-xs text-gray-400 uppercase font-semibold">Popular:</span>
+                    <span
+                        class="bg-navy-dark/80 border border-navy-light px-3 py-1 rounded-full text-xs text-gray-300">🇨🇦
+                        Canada</span>
+                    <span
+                        class="bg-navy-dark/80 border border-navy-light px-3 py-1 rounded-full text-xs text-gray-300">🇦🇺
+                        Australia</span>
+                    <span
+                        class="bg-navy-dark/80 border border-navy-light px-3 py-1 rounded-full text-xs text-gray-300">🇬🇧
+                        United Kingdom</span>
+                    <span
+                        class="bg-navy-dark/80 border border-navy-light px-3 py-1 rounded-full text-xs text-gray-300">🇺🇸
+                        United States</span>
+                    <span
+                        class="bg-navy-dark/80 border border-navy-light px-3 py-1 rounded-full text-xs text-gray-300">🇩🇪
+                        Germany</span>
+                </div>
+            </div>
+
+            <!-- Hero Visual Card -->
+            <div class="relative flex justify-center">
+                <div class="relative w-full max-w-md glass-card p-6 rounded-3xl shadow-2xl space-y-6">
+                    <div class="flex items-center justify-between border-b border-white/10 pb-4">
+                        <div class="flex items-center gap-3">
+                            <div
+                                class="w-12 h-12 rounded-full bg-amberGold flex items-center justify-center text-navy-dark font-bold text-lg shadow">
+                                <i class="fa-solid fa-passport"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-white text-lg">Express Visa Portal</h4>
+                                <p class="text-xs text-amberGold">Live Application Tracking</p>
+                            </div>
+                        </div>
+                        <span
+                            class="bg-emerald-500/20 text-emerald-400 border border-emerald-500/30 text-xs px-3 py-1 rounded-full font-medium">Verified</span>
+                    </div>
+
+                    <div class="space-y-3">
+                        <div
+                            class="bg-navy-dark/70 p-4 rounded-xl border border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-6 bg-red-600 rounded flex items-center justify-center text-white text-[10px] font-bold shadow">
+                                    CAN</div>
+                                <div>
+                                    <p class="text-sm font-semibold text-white">Express Entry PR</p>
+                                    <p class="text-xs text-gray-400">ITA Received</p>
+                                </div>
+                            </div>
+                            <span class="text-xs text-amberGold font-bold">Approved</span>
+                        </div>
+
+                        <div
+                            class="bg-navy-dark/70 p-4 rounded-xl border border-white/5 flex items-center justify-between">
+                            <div class="flex items-center gap-3">
+                                <div
+                                    class="w-9 h-6 bg-blue-700 rounded flex items-center justify-center text-white text-[10px] font-bold shadow">
+                                    AUS</div>
+                                <div>
+                                    <p class="text-sm font-semibold text-white">Skilled Worker 189</p>
+                                    <p class="text-xs text-gray-400">Visa Stamped</p>
+                                </div>
+                            </div>
+                            <span class="text-xs text-emerald-400 font-bold">Completed</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="bg-gradient-to-r from-amberGold/20 to-amberGold/5 p-4 rounded-xl border border-amberGold/30 flex items-center gap-3">
+                        <i class="fa-solid fa-shield-halved text-amberGold text-xl"></i>
+                        <p class="text-xs text-gray-200">100% Secure document handling & legal representation in
+                            accordance with international immigration laws.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Bar / Stats Section -->
+    <section class="bg-navy-dark py-12 border-b border-navy-light/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+            <div class="space-y-2">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-amberGold">15+</h3>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider font-medium">Years of Experience</p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-amberGold">98%</h3>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider font-medium">Visa Success Rate</p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-amberGold">35+</h3>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider font-medium">Countries Served</p>
+            </div>
+            <div class="space-y-2">
+                <h3 class="text-3xl sm:text-4xl font-extrabold text-amberGold">20K+</h3>
+                <p class="text-xs sm:text-sm text-gray-400 uppercase tracking-wider font-medium">Happy Settled Clients
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Grid Section -->
+    <section id="services" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span
+                    class="text-amberGold-dark font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Our
+                    Professional Services</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Comprehensive Visa & Immigration Solutions
+                </h2>
+                <p class="text-gray-600 text-base">Tailored strategies delivered by certified consultants to maximize
+                    your approval chances.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Student Visas</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Secure admissions and study permits for
+                        top-ranked universities and colleges across Canada, UK, USA, Australia, and Europe.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 2 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Work Visas</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Connect with global employers, secure
+                        sponsored work permits, and navigate temporary foreign worker programs with ease.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 3 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-id-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Permanent Residency (PR)</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Expert guidance through Express Entry,
+                        Provincial Nominee Programs (PNP), and skilled migration point calculations.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 4 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-umbrella-beach"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Tourist & Visit Visas</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Hassle-free tourist, family visit, and
+                        business visitor visas with robust itineraries and financial document preparation.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 5 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-building-columns"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Business Immigration</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Tailored investor visas, startup entrepreneur
+                        pathways, and corporate branch establishment for business owners.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+
+                <!-- Service 6 -->
+                <div
+                    class="bg-gray-50 border border-gray-100 p-8 rounded-3xl shadow-sm hover:shadow-xl transition group hover:-translate-y-1">
+                    <div
+                        class="w-14 h-14 rounded-2xl bg-navy text-amberGold flex items-center justify-center text-2xl mb-6 group-hover:bg-amberGold group-hover:text-navy transition shadow-md">
+                        <i class="fa-solid fa-people-roof"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-navy mb-3">Family Sponsorship</h3>
+                    <p class="text-gray-600 text-sm mb-6 leading-relaxed">Reunite with your spouse, children, parents,
+                        or relatives through legal family reunification sponsorship programs.</p>
+                    <button onclick="openModal('consultationModal')"
+                        class="text-navy font-semibold text-sm inline-flex items-center gap-2 group-hover:text-amberGold-dark transition">
+                        Learn More <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Destinations Section -->
+    <section id="countries" class="py-24 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span
+                    class="text-amberGold-dark font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Top
+                    Destinations</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Where Do You Want to Go?</h2>
+                <p class="text-gray-600 text-base">Explore top immigration destinations with high standards of living,
+                    robust economies, and welcoming policies.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Canada Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="h-48 bg-navy relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/40 to-transparent z-10">
+                        </div>
+                        <img src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=Canada+Skyline"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            alt="Canada">
+                        <div class="absolute bottom-4 left-6 z-20 flex items-center gap-3">
+                            <span
+                                class="w-10 h-8 rounded-lg shadow flex items-center justify-center bg-red-600 text-white font-bold text-xs">CAN</span>
+                            <h3 class="text-2xl font-bold text-white">Canada</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-gray-600 text-sm">Famous for Express Entry PR, Provincial Nominee Programs (PNP),
+                            and world-class universities with post-graduate work permits.</p>
+                        <div
+                            class="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
+                            <span>Processing: <strong>3-6 Months</strong></span>
+                            <span>Success: <strong class="text-emerald-600">99%</strong></span>
+                        </div>
+                        <button onclick="openModal('consultationModal')"
+                            class="w-full bg-navy text-white hover:bg-navy-light py-3 rounded-xl font-semibold text-sm transition shadow">
+                            Apply for Canada
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Australia Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="h-48 bg-navy relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/40 to-transparent z-10">
+                        </div>
+                        <img src="https://placehold.co/600x400/DC2626/FFFFFF?text=Australia+Opera"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            alt="Australia">
+                        <div class="absolute bottom-4 left-6 z-20 flex items-center gap-3">
+                            <span
+                                class="w-10 h-8 rounded-lg shadow flex items-center justify-center bg-blue-900 text-white font-bold text-xs">AUS</span>
+                            <h3 class="text-2xl font-bold text-white">Australia</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-gray-600 text-sm">Skilled migration pathways (Subclass 189/190), high minimum
+                            wages, magnificent climate, and vibrant multicultural cities.</p>
+                        <div
+                            class="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
+                            <span>Processing: <strong>4-8 Months</strong></span>
+                            <span>Success: <strong class="text-emerald-600">97%</strong></span>
+                        </div>
+                        <button onclick="openModal('consultationModal')"
+                            class="w-full bg-navy text-white hover:bg-navy-light py-3 rounded-xl font-semibold text-sm transition shadow">
+                            Apply for Australia
+                        </button>
+                    </div>
+                </div>
+
+                <!-- UK Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="h-48 bg-navy relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/40 to-transparent z-10">
+                        </div>
+                        <img src="https://placehold.co/600x400/1E3A8A/FFFFFF?text=London+Big+Ben"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="UK">
+                        <div class="absolute bottom-4 left-6 z-20 flex items-center gap-3">
+                            <span
+                                class="w-10 h-8 rounded-lg shadow flex items-center justify-center bg-blue-700 text-white font-bold text-xs">UK</span>
+                            <h3 class="text-2xl font-bold text-white">United Kingdom</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-gray-600 text-sm">Skilled worker sponsorship visas, graduate route post-study
+                            work, and world-renowned academic institutions.</p>
+                        <div
+                            class="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
+                            <span>Processing: <strong>3-12 Weeks</strong></span>
+                            <span>Success: <strong class="text-emerald-600">98%</strong></span>
+                        </div>
+                        <button onclick="openModal('consultationModal')"
+                            class="w-full bg-navy text-white hover:bg-navy-light py-3 rounded-xl font-semibold text-sm transition shadow">
+                            Apply for UK
+                        </button>
+                    </div>
+                </div>
+
+                <!-- USA Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="h-48 bg-navy relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/40 to-transparent z-10">
+                        </div>
+                        <img src="https://placehold.co/600x400/B91C1C/FFFFFF?text=USA+New+York"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500" alt="USA">
+                        <div class="absolute bottom-4 left-6 z-20 flex items-center gap-3">
+                            <span
+                                class="w-10 h-8 rounded-lg shadow flex items-center justify-center bg-red-700 text-white font-bold text-xs">USA</span>
+                            <h3 class="text-2xl font-bold text-white">United States</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-gray-600 text-sm">F1 student visas, H1B work sponsorship assistance, investor
+                            EB-5 programs, and tourist B1/B2 applications.</p>
+                        <div
+                            class="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
+                            <span>Processing: <strong>2-6 Months</strong></span>
+                            <span>Success: <strong class="text-emerald-600">95%</strong></span>
+                        </div>
+                        <button onclick="openModal('consultationModal')"
+                            class="w-full bg-navy text-white hover:bg-navy-light py-3 rounded-xl font-semibold text-sm transition shadow">
+                            Apply for USA
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Europe Card -->
+                <div class="bg-white rounded-3xl overflow-hidden shadow-md hover:shadow-xl transition group">
+                    <div class="h-48 bg-navy relative overflow-hidden flex items-center justify-center">
+                        <div class="absolute inset-0 bg-gradient-to-t from-navy-dark via-navy/40 to-transparent z-10">
+                        </div>
+                        <img src="https://placehold.co/600x400/047857/FFFFFF?text=Europe+Schengen"
+                            class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                            alt="Europe">
+                        <div class="absolute bottom-4 left-6 z-20 flex items-center gap-3">
+                            <span
+                                class="w-10 h-8 rounded-lg shadow flex items-center justify-center bg-amber-600 text-white font-bold text-xs">EU</span>
+                            <h3 class="text-2xl font-bold text-white">Europe (Schengen)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 space-y-4">
+                        <p class="text-gray-600 text-sm">Schengen tourist visas, Germany job seeker visa, and EU Blue
+                            Card residency pathways across 29 European nations.</p>
+                        <div
+                            class="flex items-center justify-between text-xs text-gray-500 pt-2 border-t border-gray-100">
+                            <span>Processing: <strong>15-30 Days</strong></span>
+                            <span>Success: <strong class="text-emerald-600">99%</strong></span>
+                        </div>
+                        <button onclick="openModal('consultationModal')"
+                            class="w-full bg-navy text-white hover:bg-navy-light py-3 rounded-xl font-semibold text-sm transition shadow">
+                            Apply for Europe
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Custom Country Inquire -->
+                <div
+                    class="bg-gradient-to-br from-navy to-navy-dark text-white rounded-3xl overflow-hidden shadow-md p-8 flex flex-col justify-between">
+                    <div class="space-y-4">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-amberGold text-navy-dark flex items-center justify-center text-xl font-bold shadow">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+                        <h3 class="text-2xl font-bold">Other Destinations?</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">We also process immigration and visas for New
+                            Zealand, UAE, Japan, Singapore, and over 30 other countries worldwide.</p>
+                    </div>
+                    <button onclick="openModal('consultationModal')"
+                        class="mt-6 bg-amberGold text-navy-dark hover:bg-amberGold-light py-3 rounded-xl font-bold text-sm transition shadow-lg">
+                        Inquire Custom Country
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Visa Eligibility Checker (Quiz) -->
+    <section id="quiz" class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-12">
+                <span
+                    class="text-amberGold-dark font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Interactive
+                    Tool</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Instant Visa Eligibility Quiz</h2>
+                <p class="text-gray-600 text-base">Complete this 4-step interactive questionnaire to calculate your
+                    immigration score and get immediate recommendations.</p>
+            </div>
+
+            <div class="bg-navy-dark text-white p-8 sm:p-12 rounded-3xl shadow-2xl border border-amberGold/20 relative">
+                <!-- Progress Bar -->
+                <div class="mb-8">
+                    <div class="flex justify-between text-xs text-gray-400 mb-2 font-semibold">
+                        <span id="stepIndicator">Step 1 of 4: Target Destination</span>
+                        <span id="stepPercentage">25% Completed</span>
+                    </div>
+                    <div class="w-full bg-navy-light/50 h-2 rounded-full overflow-hidden">
+                        <div id="progressBar" class="bg-amberGold h-full transition-all duration-300 w-1/4"></div>
+                    </div>
+                </div>
+
+                <form id="quizForm" onsubmit="handleQuizSubmit(event)">
+                    <!-- Step 1: Destination -->
+                    <div id="quizStep1" class="space-y-6">
+                        <h3 class="text-xl font-bold text-white">Select Your Target Destination</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="Canada" required class="accent-amberGold">
+                                <span class="font-semibold text-sm">🇨🇦 Canada</span>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="Australia" class="accent-amberGold">
+                                <span class="font-semibold text-sm">🇦🇺 Australia</span>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="UK" class="accent-amberGold">
+                                <span class="font-semibold text-sm">🇬🇧 United Kingdom</span>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="USA" class="accent-amberGold">
+                                <span class="font-semibold text-sm">🇺🇸 United States</span>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="Germany" class="accent-amberGold">
+                                <span class="font-semibold text-sm">🇩🇪 Germany / EU</span>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="country" value="Other" class="accent-amberGold">
+                                <span class="font-semibold text-sm">🌍 Other Country</span>
+                            </label>
+                        </div>
+                        <div class="flex justify-end pt-4">
+                            <button type="button" onclick="nextQuizStep(2)"
+                                class="bg-amberGold text-navy-dark font-bold px-8 py-3 rounded-xl hover:bg-amberGold-light transition shadow">
+                                Next Step <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Visa Type -->
+                    <div id="quizStep2" class="space-y-6 hidden">
+                        <h3 class="text-xl font-bold text-white">Select Your Desired Visa Type</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="visaType" value="PR" required class="accent-amberGold">
+                                <div>
+                                    <p class="font-semibold text-sm">Permanent Residency (PR)</p>
+                                    <p class="text-xs text-gray-400">Skilled migration / Express entry</p>
+                                </div>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="visaType" value="Study" class="accent-amberGold">
+                                <div>
+                                    <p class="font-semibold text-sm">Student Visa</p>
+                                    <p class="text-xs text-gray-400">University / College admission</p>
+                                </div>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="visaType" value="Work" class="accent-amberGold">
+                                <div>
+                                    <p class="font-semibold text-sm">Work Permit</p>
+                                    <p class="text-xs text-gray-400">Employer sponsored or open permit</p>
+                                </div>
+                            </label>
+                            <label
+                                class="cursor-pointer bg-navy border border-navy-light hover:border-amberGold p-4 rounded-2xl flex items-center gap-3 transition">
+                                <input type="radio" name="visaType" value="Tourist" class="accent-amberGold">
+                                <div>
+                                    <p class="font-semibold text-sm">Tourist / Visitor Visa</p>
+                                    <p class="text-xs text-gray-400">Holidays or family visit</p>
+                                </div>
+                            </label>
+                        </div>
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="prevQuizStep(1)"
+                                class="border border-gray-500 text-gray-300 px-6 py-3 rounded-xl hover:bg-white/5 transition text-sm">
+                                <i class="fa-solid fa-arrow-left mr-2 text-xs"></i> Back
+                            </button>
+                            <button type="button" onclick="nextQuizStep(3)"
+                                class="bg-amberGold text-navy-dark font-bold px-8 py-3 rounded-xl hover:bg-amberGold-light transition shadow text-sm">
+                                Next Step <i class="fa-solid fa-arrow-right ml-2 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Questionnaire (Age, Education, Experience) -->
+                    <div id="quizStep3" class="space-y-6 hidden">
+                        <h3 class="text-xl font-bold text-white">Your Professional & Educational Profile</h3>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            <div class="space-y-2">
+                                <label class="block text-sm text-gray-300 font-medium">Your Age Group</label>
+                                <select id="qAge"
+                                    class="w-full bg-navy border border-navy-light text-white px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm">
+                                    <option value="25">18 - 29 years (Max points)</option>
+                                    <option value="20">30 - 39 years</option>
+                                    <option value="12">40 - 45 years</option>
+                                    <option value="5">Above 45 years</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2">
+                                <label class="block text-sm text-gray-300 font-medium">Highest Education</label>
+                                <select id="qEdu"
+                                    class="w-full bg-navy border border-navy-light text-white px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm">
+                                    <option value="30">Master's / Ph.D Degree</option>
+                                    <option value="25">Bachelor's Degree (4-Year)</option>
+                                    <option value="18">2-Year Diploma / Associate</option>
+                                    <option value="10">High School Graduate</option>
+                                </select>
+                            </div>
+                            <div class="space-y-2 sm:col-span-2">
+                                <label class="block text-sm text-gray-300 font-medium">Skilled Work Experience</label>
+                                <select id="qExp"
+                                    class="w-full bg-navy border border-navy-light text-white px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm">
+                                    <option value="30">5+ Years of Experience</option>
+                                    <option value="22">3 - 5 Years of Experience</option>
+                                    <option value="15">1 - 3 Years of Experience</option>
+                                    <option value="5">Less than 1 Year / Fresher</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="flex justify-between pt-4">
+                            <button type="button" onclick="prevQuizStep(2)"
+                                class="border border-gray-500 text-gray-300 px-6 py-3 rounded-xl hover:bg-white/5 transition text-sm">
+                                <i class="fa-solid fa-arrow-left mr-2 text-xs"></i> Back
+                            </button>
+                            <button type="submit"
+                                class="bg-gradient-to-r from-amberGold to-amberGold-dark text-navy-dark font-bold px-8 py-3 rounded-xl hover:brightness-110 transition shadow text-sm">
+                                Calculate Score <i class="fa-solid fa-calculator ml-2 text-xs"></i>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+
+                <!-- Step 4: Results (Hidden until submission) -->
+                <div id="quizStep4" class="space-y-6 hidden text-center">
+                    <div
+                        class="w-16 h-16 bg-emerald-500/20 text-emerald-400 border border-emerald-500/40 rounded-full flex items-center justify-center text-3xl mx-auto shadow-inner">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white">Your Evaluation Complete!</h3>
+                    <div
+                        class="inline-block bg-amberGold/20 text-amberGold px-8 py-3 rounded-2xl text-2xl font-black border border-amberGold/40 shadow">
+                        Eligibility Score: <span id="quizScoreVal">88</span> / 100 Points
+                    </div>
+                    <p id="quizRecommendation" class="text-gray-300 text-sm max-w-lg mx-auto leading-relaxed">
+                        Excellent profile! You comfortably meet the minimum threshold for your chosen destination. We
+                        recommend starting your document verification immediately.
+                    </p>
+                    <div class="pt-4 flex flex-col sm:flex-row justify-center gap-4">
+                        <button onclick="openModal('consultationModal')"
+                            class="bg-amberGold text-navy-dark font-bold px-8 py-3.5 rounded-xl text-sm hover:bg-amberGold-light transition shadow">
+                            Book Free Consultation with Expert
+                        </button>
+                        <button onclick="resetQuiz()"
+                            class="border border-gray-500 text-gray-300 px-6 py-3.5 rounded-xl hover:bg-white/5 transition text-sm">
+                            Retake Quiz
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories / Testimonials Section -->
+    <section id="testimonials" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span
+                    class="text-amberGold-dark font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Success
+                    Stories</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">What Our Clients Say</h2>
+                <p class="text-gray-600 text-base">Read authentic reviews from students, professionals, and families who
+                    successfully relocated abroad with JMF Consultants.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div
+                    class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amberGold gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm italic leading-relaxed">"JMF Consultants made my Canadian PR
+                            journey completely stress-free. Their experts meticulously reviewed my Express Entry profile
+                            and point calculation. Highly recommended!"</p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                        <img src="https://placehold.co/50x50/1E3A8A/FFFFFF?text=RS"
+                            class="w-12 h-12 rounded-full object-cover shadow" alt="Rana">
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Rana Shabbir</h4>
+                            <p class="text-xs text-gray-500">🇨🇦 Canada PR Visa Holder</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div
+                    class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amberGold gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm italic leading-relaxed">"I received my UK Student Visa for my
+                            Master's degree in London without any delay. The team checked my financial documents
+                            thoroughly and prepared me for the interview."</p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                        <img src="https://placehold.co/50x50/DC2626/FFFFFF?text=AK"
+                            class="w-12 h-12 rounded-full object-cover shadow" alt="Aisha">
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Aisha Khan</h4>
+                            <p class="text-xs text-gray-500">🇬🇧 UK Student Visa</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div
+                    class="bg-white border border-gray-100 p-8 rounded-3xl shadow-sm flex flex-col justify-between space-y-6">
+                    <div class="space-y-4">
+                        <div class="flex text-amberGold gap-1 text-sm">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm italic leading-relaxed">"Fantastic service! Their expertise in
+                            Australia Subclass 189 skilled migration is top-notch. They helped me secure my visa within
+                            5 months of filing."</p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-gray-100">
+                        <img src="https://placehold.co/50x50/047857/FFFFFF?text=AA"
+                            class="w-12 h-12 rounded-full object-cover shadow" alt="Ahmad">
+                        <div>
+                            <h4 class="font-bold text-navy text-sm">Ahmad Ali</h4>
+                            <p class="text-xs text-gray-500">🇦🇺 Australia Skilled Worker</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Accordion Section -->
+    <section class="py-24 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-12">
+            <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+                <span
+                    class="text-amberGold-dark font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Got
+                    Questions?</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-navy">Frequently Asked Questions</h2>
+                <p class="text-gray-600 text-base">Find answers to common queries regarding immigration processes,
+                    timelines, and legal document requirements.</p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ Item 1 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 font-bold text-navy flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        <span>How long does the visa application process typically take?</span>
+                        <i class="fa-solid fa-chevron-down text-amberGold transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 bg-white">
+                        Processing times vary depending on the destination country and visa category. For example,
+                        tourist visas take 2-4 weeks, student visas take 4-12 weeks, and permanent residency programs
+                        (like Canada Express Entry) generally take 3 to 6 months from the date of final submission.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 font-bold text-navy flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Do I need to take an English language test like IELTS or PTE?</span>
+                        <i class="fa-solid fa-chevron-down text-amberGold transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 bg-white">
+                        Yes, for most English-speaking destination countries (Canada, Australia, UK, USA, New Zealand),
+                        proof of English proficiency through recognized tests like IELTS General, PTE Academic, or TOEFL
+                        is mandatory for study, work, and permanent residency visas.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 font-bold text-navy flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        <span>What is included in JMF's visa consultancy fee?</span>
+                        <i class="fa-solid fa-chevron-down text-amberGold transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 bg-white">
+                        Our fee includes comprehensive profile evaluation, document verification, translation guidance,
+                        application drafting, submission through official government portals, mock interview
+                        preparation, and dedicated support until your final visa outcome.
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="border border-gray-200 rounded-2xl overflow-hidden shadow-sm transition">
+                    <button onclick="toggleFaq(this)"
+                        class="w-full text-left p-6 font-bold text-navy flex justify-between items-center bg-gray-50 hover:bg-gray-100 transition">
+                        <span>Can I bring my family along with my student or work visa?</span>
+                        <i class="fa-solid fa-chevron-down text-amberGold transition-transform duration-300"></i>
+                    </button>
+                    <div class="hidden p-6 text-gray-600 text-sm leading-relaxed border-t border-gray-100 bg-white">
+                        In most cases, yes! Spouses and dependent children can accompany or join applicants on work
+                        visas and postgraduate study programs, often allowing spouses to obtain open work permits.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Consultation Booking Section -->
+    <section id="contact" class="py-24 bg-navy text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <span
+                    class="text-amberGold font-semibold text-sm uppercase tracking-widest bg-amberGold/10 px-3 py-1 rounded-md">Get
+                    In Touch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold">Ready to Start Your Immigration Journey?</h2>
+                <p class="text-gray-300 text-base leading-relaxed">Book a consultation with our senior immigration
+                    advisors or visit our corporate office. We are here to answer all your queries with complete
+                    transparency.</p>
+
+                <div class="space-y-4 pt-2">
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-amberGold/20 border border-amberGold/30 flex items-center justify-center text-amberGold text-lg shadow">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Head Office</h4>
+                            <p class="text-xs text-gray-400">100 Financial Plaza, Suite 400, New York, NY 10005</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-amberGold/20 border border-amberGold/30 flex items-center justify-center text-amberGold text-lg shadow">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Direct Phone</h4>
+                            <p class="text-xs text-gray-400">+1 (800) 555-GLOBAL / +1 (212) 555-0198</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4">
+                        <div
+                            class="w-12 h-12 rounded-2xl bg-amberGold/20 border border-amberGold/30 flex items-center justify-center text-amberGold text-lg shadow">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-white text-sm">Email Support</h4>
+                            <p class="text-xs text-gray-400">jmfconsultantpk.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white text-gray-800 p-8 sm:p-10 rounded-3xl shadow-2xl">
+                <h3 class="text-2xl font-bold text-navy mb-6">Book Free Consultation</h3>
+                <form onsubmit="handleContactSubmit(event)" class="space-y-4">
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Full Name</label>
+                        <input type="text" required
+                            class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                            placeholder="John Doe">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Email Address</label>
+                        <input type="email" required
+                            class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                            placeholder="john@example.com">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Phone Number</label>
+                        <input type="tel" required
+                            class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                            placeholder="+1 (555) 000-0000">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Target Country</label>
+                        <select
+                            class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm">
+                            <option>Canada</option>
+                            <option>Australia</option>
+                            <option>United Kingdom</option>
+                            <option>United States</option>
+                            <option>Europe / Schengen</option>
+                        </select>
+                    </div>
+                    <button type="submit"
+                        class="w-full bg-navy hover:bg-navy-light text-white font-bold py-3.5 rounded-xl transition shadow-md text-sm">
+                        Confirm Appointment
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-dark text-gray-400 text-sm py-12 border-t border-navy-light/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-12 grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+            <div class="space-y-4">
+                <div class="flex items-center gap-3">
+                    <div
+                        class="w-8 h-8 rounded-lg bg-amberGold flex items-center justify-center text-navy-dark font-bold shadow">
+                        <i class="fa-solid fa-compass text-sm"></i>
+                    </div>
+                    <span class="text-xl font-bold text-white">JMF<span class="text-amberGold">Consultants</span></span>
+                </div>
+                <p class="text-xs text-gray-400 leading-relaxed">Licensed immigration and visa consultancy providing
+                    legal, transparent, and prompt assistance for global relocation.</p>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Quick Links</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#services" class="hover:text-amberGold transition">Services Overview</a></li>
+                    <li><a href="#countries" class="hover:text-amberGold transition">Destination Countries</a></li>
+                    <li><a href="#quiz" class="hover:text-amberGold transition">Eligibility Quiz</a></li>
+                    <li><a href="#testimonials" class="hover:text-amberGold transition">Success Stories</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Visa Services</h4>
+                <ul class="space-y-2 text-xs">
+                    <li><a href="#services" class="hover:text-amberGold transition">Student Visa Programs</a></li>
+                    <li><a href="#services" class="hover:text-amberGold transition">Skilled Work Permits</a></li>
+                    <li><a href="#services" class="hover:text-amberGold transition">Permanent Residency (PR)</a></li>
+                    <li><a href="#services" class="hover:text-amberGold transition">Tourist & Visit Visas</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="text-white font-semibold mb-4 text-sm tracking-wider uppercase">Newsletter</h4>
+                <p class="text-xs text-gray-400 mb-3">Subscribe for immigration policy updates and draw scores.</p>
+                <div class="flex gap-2">
+                    <input type="email" placeholder="Your email"
+                        class="bg-navy border border-navy-light text-white px-3 py-2 rounded-lg text-xs w-full focus:outline-none focus:border-amberGold">
+                    <button
+                        class="bg-amberGold text-navy-dark px-4 py-2 rounded-lg font-bold text-xs hover:bg-amberGold-light transition">Join</button>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="max-w-7xl mx-auto px-4 sm:px-12 pt-8 border-t border-navy-light/20 flex flex-col sm:flex-row justify-between items-center text-xs text-gray-500 gap-4">
+            <p>&copy; 2026 JMF Consultants Visa & Immigration Services. All rights reserved.</p>
+            <div class="flex gap-6">
+                <a href="#" class="hover:text-amberGold transition">Privacy Policy</a>
+                <a href="#" class="hover:text-amberGold transition">Terms of Service</a>
+                <a href="#" class="hover:text-amberGold transition">Disclaimer</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Consultation Modal -->
+    <div id="consultationModal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white text-gray-800 w-full max-w-lg rounded-3xl p-8 relative shadow-2xl animate-fade-in">
+            <button onclick="closeModal('consultationModal')"
+                class="absolute top-6 right-6 text-gray-400 hover:text-gray-700 text-xl font-bold"
+                aria-label="Close Modal">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div
+                    class="w-12 h-12 bg-amberGold/10 text-amberGold-dark rounded-xl flex items-center justify-center text-2xl mx-auto mb-3 shadow">
+                    <i class="fa-solid fa-calendar-days"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-navy">Book Free Consultation</h3>
+                <p class="text-xs text-gray-500 mt-1">Fill out the form and our senior visa advisor will contact you
+                    within 2 hours.</p>
+            </div>
+            <form onsubmit="handleModalSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Full Name</label>
+                    <input type="text" required
+                        class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                        placeholder="John Doe">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Email Address</label>
+                    <input type="email" required
+                        class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                        placeholder="john@example.com">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Phone Number</label>
+                    <input type="tel" required
+                        class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm"
+                        placeholder="+1 (555) 000-0000">
+                </div>
+                <div>
+                    <label class="block text-xs font-semibold uppercase text-gray-600 mb-1">Target Country &
+                        Visa</label>
+                    <select
+                        class="w-full bg-gray-50 border border-gray-200 px-4 py-3 rounded-xl focus:outline-none focus:border-amberGold text-sm">
+                        <option>Canada - Express Entry / PR</option>
+                        <option>Australia - Skilled Migration</option>
+                        <option>UK - Student Visa</option>
+                        <option>USA - Work / Study Visa</option>
+                        <option>Europe - Schengen / Tourist</option>
+                    </select>
+                </div>
+                <button type="submit"
+                    class="w-full bg-amberGold hover:bg-amberGold-light text-navy-dark font-bold py-3.5 rounded-xl transition shadow-md text-sm">
+                    Schedule Consultation Now
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Success Message Modal / Toast Box -->
+    <div id="successModal"
+        class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white text-gray-800 w-full max-w-md rounded-3xl p-8 text-center space-y-4 shadow-2xl">
+            <div
+                class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center text-3xl mx-auto shadow-inner">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-navy">Request Submitted!</h3>
+            <p id="successText" class="text-gray-600 text-sm">Thank you for getting in touch. One of our certified
+                immigration consultants will call you shortly.</p>
+            <button onclick="closeModal('successModal')"
+                class="w-full bg-navy text-white font-bold py-3 rounded-xl text-sm hover:bg-navy-light transition shadow">
+                Close
+            </button>
+        </div>
+    </div>
+
+    <!-- JavaScript for Interactivity -->
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        function toggleMobileMenu() {
+            mobileMenu.classList.add('hidden');
+        }
+
+        // Modal Handlers
+        function openModal(modalId) {
+            document.getElementById(modalId).classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Quiz Step Navigation
+        function nextQuizStep(step) {
+            if (step === 2) {
+                // Validate step 1
+                const countrySelected = document.querySelector('input[name="country"]:checked');
+                if (!countrySelected) {
+                    alertBox("Please select a target destination before proceeding.");
+                    return;
+                }
+                document.getElementById('quizStep1').classList.add('hidden');
+                document.getElementById('quizStep2').classList.remove('hidden');
+                document.getElementById('stepIndicator').innerText = "Step 2 of 4: Visa Category";
+                document.getElementById('stepPercentage').innerText = "50% Completed";
+                document.getElementById('progressBar').style.width = "50%";
+            } else if (step === 3) {
+                const visaSelected = document.querySelector('input[name="visaType"]:checked');
+                if (!visaSelected) {
+                    alertBox("Please select a visa type before proceeding.");
+                    return;
+                }
+                document.getElementById('quizStep2').classList.add('hidden');
+                document.getElementById('quizStep3').classList.remove('hidden');
+                document.getElementById('stepIndicator').innerText = "Step 3 of 4: Profile Details";
+                document.getElementById('stepPercentage').innerText = "75% Completed";
+                document.getElementById('progressBar').style.width = "75%";
+            }
+        }
+
+        function prevQuizStep(step) {
+            if (step === 1) {
+                document.getElementById('quizStep2').classList.add('hidden');
+                document.getElementById('quizStep1').classList.remove('hidden');
+                document.getElementById('stepIndicator').innerText = "Step 1 of 4: Target Destination";
+                document.getElementById('stepPercentage').innerText = "25% Completed";
+                document.getElementById('progressBar').style.width = "25%";
+            } else if (step === 2) {
+                document.getElementById('quizStep3').classList.add('hidden');
+                document.getElementById('quizStep2').classList.remove('hidden');
+                document.getElementById('stepIndicator').innerText = "Step 2 of 4: Visa Category";
+                document.getElementById('stepPercentage').innerText = "50% Completed";
+                document.getElementById('progressBar').style.width = "50%";
+            }
+        }
+
+        function handleQuizSubmit(e) {
+            e.preventDefault();
+            const ageVal = parseInt(document.getElementById('qAge').value) || 0;
+            const eduVal = parseInt(document.getElementById('qEdu').value) || 0;
+            const expVal = parseInt(document.getElementById('qExp').value) || 0;
+
+            const totalScore = ageVal + eduVal + expVal + 28; // Base baseline points
+
+            document.getElementById('quizScoreVal').innerText = totalScore;
+
+            const recEl = document.getElementById('quizRecommendation');
+            if (totalScore >= 75) {
+                recEl.innerText = "Outstanding profile! Your credentials meet top-tier eligibility standards for express visa approval. Speak with our senior immigration counsel to start filing.";
+            } else {
+                recEl.innerText = "Good profile! With slight enhancements in language proficiency or documentation, you can easily exceed the required threshold.";
+            }
+
+            document.getElementById('quizStep3').classList.add('hidden');
+            document.getElementById('quizStep4').classList.remove('hidden');
+            document.getElementById('stepIndicator').innerText = "Step 4 of 4: Evaluation Results";
+            document.getElementById('stepPercentage').innerText = "100% Completed";
+            document.getElementById('progressBar').style.width = "100%";
+        }
+
+        function resetQuiz() {
+            document.getElementById('quizForm').reset();
+            document.getElementById('quizStep4').classList.add('hidden');
+            document.getElementById('quizStep1').classList.remove('hidden');
+            document.getElementById('stepIndicator').innerText = "Step 1 of 4: Target Destination";
+            document.getElementById('stepPercentage').innerText = "25% Completed";
+            document.getElementById('progressBar').style.width = "25%";
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(btn) {
+            const content = btn.nextElementSibling;
+            const icon = btn.querySelector('fa-chevron-down');
+
+            // Toggle current
+            content.classList.toggle('hidden');
+            btn.classList.toggle('bg-gray-100');
+        }
+
+        // Custom notification box (replacing alert)
+        function alertBox(msg) {
+            document.getElementById('successText').innerText = msg;
+            openModal('successModal');
+        }
+
+        // Form submissions
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            closeModal('consultationModal');
+            document.getElementById('successText').innerText = "Your consultation has been booked successfully! Our senior advisor will contact you within 2 hours.";
+            openModal('successModal');
+        }
+
+        function handleContactSubmit(e) {
+            e.preventDefault();
+            document.getElementById('successText').innerText = "Thank you for reaching out! Your appointment request has been received by our office.";
+            openModal('successModal');
+            e.target.reset();
+        }
+    </script>
+</body>
+
+</html>
